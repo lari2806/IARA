@@ -19,6 +19,7 @@ header{
     height: 110px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 
+
     img{
         width: 130px;
         margin-left: 1%;
@@ -35,7 +36,16 @@ header{
         float: right;
         margin-right: 2%;
     }
+        
+   
   }
+   #text {
+      margin-left: 15%;
+      font-family: "Baskervville SC", serif;
+      color: $cor-site;
+      display: inline-block;
+      
+    }
 .linha{
   background-color: $cor-site;
   height: 2px;
@@ -53,12 +63,6 @@ main{
     }
     .mostrar {
         opacity: 1;
-    }
-    
-    #text {
-      text-align: center;
-      font-family: "Baskervville SC", serif;
-      color: $cor-site;
     }
 
     p{
@@ -115,10 +119,8 @@ main{
     color: white; 
     border: none; 
     border-radius: 20px; 
-    padding: 10px 20px; 
     font-size: 40px; 
     font-family: "Baskervville SC", serif;
-    cursor: pointer; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     height: 200px;
     width: 300px;
@@ -141,16 +143,13 @@ main{
   padding: 10px 20px; 
   font-size: 40px; 
   font-family: "Baskervville SC", serif;
-  cursor: pointer; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  position: relative;
   height: 200px;
   width: 300px;
   margin-left: 20%;
   margin-top: 10%;
 
 }
-
 
 #chat-button2:hover {
   background-color: $cor-site; 
@@ -161,7 +160,8 @@ main{
 h2{
   font-size: 40px;
   text-align: left;
-  margin-top: 5%;
+  margin-top: 9%;
+  margin-left: 5%;
 }
 h2 span{
   color: $cor-buttons;
@@ -172,9 +172,6 @@ p{
   justify-items: left;
   
 }
-}
-#logoia{
- margin-left: 34%;
 }
 .logo-container {
   overflow: hidden;
@@ -197,6 +194,23 @@ p{
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-90%);
  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+
+  p {
+    font-size: 1.1em;
+    width: 60%;
+  }
+
+  img {
+    width: 400px;
+    padding-right: 10%;
+  }
+
 }
