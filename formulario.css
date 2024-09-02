@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(211, 230, 249);
+}
+
+header {
+  background-color: rgb(69, 142, 172);
+  height: 110px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+header img {
+  width: 130px;
+  margin-left: 1%;
+  float: left;
+}
+header nav {
+  margin-top: 1%;
+  float: right;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+form {
+  margin-top: 3%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+}
+form:focus {
+  outline: none;
+  border: 1px solid rgb(69, 142, 172);
+}
+form button {
+  width: 20%;
+  height: 40px;
+  background-color: rgb(69, 142, 172);
+  color: white;
+  border-radius: 10px;
+}
+form button:hover {
+  background-color: rgb(29, 150, 130);
+}/*# sourceMappingURL=formulario.css.map */

@@ -17,7 +17,7 @@ const phrases = ["Sejam bem vindos!", "Como você está se sentindo?", "Você n�
         if (currentCharIndex > 0) {
             textElement.innerHTML = phrases[currentPhraseIndex].substring(0, currentCharIndex - 1);
             currentCharIndex--;
-            setTimeout(erase, 0); // Ajuste o tempo para a velocidade de apagar
+            setTimeout(erase, 2); // Ajuste o tempo para a velocidade de apagar
         } else {
             currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
             setTimeout(type, 0); // Tempo antes de começar a digitar a próxima frase

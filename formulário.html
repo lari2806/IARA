@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/iara-removebg-preview.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form>
+        <label for="username">Nome de Usuário:</label>
+    <input type="text" id="username" name="username" required>
+<br><br>
+    <label for="genero">Masculino</label>
+<input type="radio" id="generoM" name="genero" value="masculino">
+<label for="genero">Feminino</label>
+<input type="radio" id="generoF" name="genero" value="feminino"> 
+<label for="genero">Trans</label>
+<input type="radio" id="generoF" name="genero" value="Trans" required>
+<br><br>
+<label for="senha">Senha:</label>
+<input type="password" id="senha" name="senha" required>
+<br><br>
+<label for="estado">Estado:</label>
+<select id="estado" name="estado" onchange="carregarCidades()" required>
+    <option value="">Selecione um estado</option>
+</select>
+<br><br>
+<label for="cidade">Cidade:</label>
+<select id="cidade" name="cidade" required>
+    <option value="">Selecione uma cidade</option>
+</select>
+<br><br>
+<button type="submit">Enviar</button>
+    </form>
+    <script src="formulario.js"></script>
+
+
+</body>
+</html>

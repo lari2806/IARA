@@ -1,0 +1,50 @@
+$cor-site:rgb(69, 142, 172) ;
+$cor-fundo:rgb(211, 230, 249);
+
+body{
+background-color: $cor-fundo;
+}
+
+header{
+    background-color: $cor-site;
+    height: 110px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    img{
+        width: 130px;
+        margin-left: 1%;
+        float: left;
+    }
+    nav{
+        margin-top: 1%;
+        float: right;
+        a{
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+        }
+    }
+}
+
+form {
+    margin-top: 3%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+
+    &:focus{
+        outline: none;
+        border: 1px solid $cor-site;
+    }
+    button{
+        width: 20%;
+        height: 40px;
+        background-color: $cor-site;
+        color: white;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: rgb(29, 150, 130);
+        }
+    }
+}
