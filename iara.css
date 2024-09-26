@@ -27,8 +27,6 @@ header img {
   height: 200%;
 }
 
-/* From Uiverse.io by satyamchaudharydev */
-/* this is a recreation of twitter search in css */
 .form {
   --input-text-color: #fff;
   --input-bg-color: rgb(110, 183, 215);
@@ -38,10 +36,6 @@ header img {
   --width-of-input: 200px;
   --inline-padding-of-input: 1.2em;
   --gap: 0.9rem;
-}
-
-/* form style */
-.form {
   font-size: 0.9rem;
   display: flex;
   gap: 0.5rem;
@@ -51,7 +45,6 @@ header img {
   isolation: isolate;
 }
 
-/* a fancy bg for showing background and border when focus. */
 .fancy-bg {
   position: absolute;
   width: 100%;
@@ -64,7 +57,6 @@ header img {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-/* label styling */
 label {
   width: 100%;
   padding: 0.8em;
@@ -78,19 +70,16 @@ label {
   position: absolute;
 }
 
-/* styling search-icon */
 .search {
   fill: var(--text-color);
   left: var(--inline-padding-of-input);
 }
 
-/* svg -- size */
 svg {
   width: 17px;
   display: block;
 }
 
-/* styling of close button */
 .close-btn {
   border: none;
   right: var(--inline-padding-of-input);
@@ -108,7 +97,6 @@ svg {
   visibility: hidden;
 }
 
-/* styling of input */
 .input {
   color: var(--input-text-color);
   width: 100%;
@@ -129,24 +117,20 @@ svg {
   color: var(--text-color);
 }
 
-/* input background change in focus */
 .input:focus ~ .fancy-bg {
   border: 1px solid var(--active-color);
   background: var(--focus-input-bg-color);
 }
 
-/* search icon color change in focus */
 .input:focus ~ .search {
   fill: var(--active-color);
 }
 
-/* showing close button when typing */
 .input:valid ~ .close-btn {
   opacity: 1;
   visibility: visible;
 }
 
-/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -181,7 +165,7 @@ main {
   opacity: 1;
 }
 
-main p{
+main p {
   color: black;
   margin-top: 8%;
   font-size: 30px;
@@ -245,6 +229,70 @@ main p{
     transform: translateY(calc(-50% - 5px)) scale(1.1);
   }
 }
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header img {
+    width: 25%;
+    height: auto;
+  }
+
+  .form {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  nav a {
+    margin: 0 10px;
+    margin-right: 20px;
+  }
+
+  main {
+    font-size: 40px;
+    height: auto;
+    padding: 20px;
+  }
+
+  main p {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .app-download p {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header img {
+    width: 20%;
+    height: auto;
+  }
+
+  main {
+    font-size: 50px;
+    height: auto;
+    padding: 40px;
+  }
+
+  main p {
+    font-size: 25px;
+    margin-left: 20%;
+  }
+
+  .app-download p {
+    margin-right: 20%;
+  }
+}
+
 #chat-button {
   background-color: rgb(110, 183, 215);
   color: white;
