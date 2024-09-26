@@ -3,10 +3,14 @@ const estadosECidades = {
     "AL": ["Maceió", "Arapiraca"],
     "AM": ["Manaus", "Parintins"],
     "AP": ["Macapá", "Macapá"],
-    "BA": ["Salvador", "Bahia"],
-    "CE": ["Fortaleza", "Ceará"],
-    "DF": ["Brasília", "Distrito Federal"],
-    "ES": ["Vitória", "Espírito Santo"],
+    "BA": ["Salvador", "Feira de Santana", "Vitória da Conquista"],
+
+    "CE": ["Fortaleza", "Sobral", "Juazeiro do Norte"],
+    "DF": ["Brasília"],
+    "ES": ["Vitória", "Vila Velha"],
+    "GO": ["Goiânia", "Ánapolis"],
+    "MA": ["São Luís", "Imperatriz"],
+    "SP": ["Campinas", "Santos"],
 };
 
 window.onload = function() {

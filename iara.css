@@ -296,7 +296,13 @@ p {
   color: rgb(110, 183, 215);
   font-weight: bold;
 }
+#sobre img{
+  width: 40%;
+}
 
+#sobre p{
+  text-align: left;
+} 
 footer {
   background-color: rgb(69, 142, 172);
   color: white;
