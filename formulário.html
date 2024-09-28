@@ -1,59 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="formulario.css">
+    <title>Modern Login Page | AsmrProg</title>
 </head>
+
 <body>
-    <header>
-        <img src="imagens/iara-removebg-preview.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="iara.html">Home</a></li>
-                <li><a href="#">Política de privacidade</a></li>
-            </ul>
-        </nav>
-    </header>
-<div>
-    <form>
-        <label for="username">Nome de Usuário:</label><br>
-    <input type="text" id="username" name="username" required>
-<br><br>
 
-   
-<input type="radio" id="generoM" name="genero" value="masculino">
- <label for="genero">Masculino</label>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Cadastre-se</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>Ponha seus dados</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
 
-<input type="radio" id="generoF" name="genero" value="feminino">
- <label for="genero">Feminino</label>
+                </div>
+            </div>
 
-<input type="radio" id="generoF" name="genero" value="Trans" required>
-<label for="genero">Trans</label>
-<br><br>
+    </div>
 
-<label for="senha">Senha:</label>
-<input type="password" id="senha" name="senha" required>
-<br><br>
-
-<label for="estado">Estado:</label>
-<select id="estado" name="estado" onchange="carregarCidades()" required>
-    <option value="">Selecione um estado</option>
-</select>
-<br><br>
-
-<label for="cidade">Cidade:</label>
-<select id="cidade" name="cidade" required>
-    <option value="">Selecione uma cidade</option>
-</select>
-</div>
-
-<button type="submit">Enviar</button>
-
-    </form>
-    <script src="formulario.js"></script>
-
-
+    <script src="script.js"></script>
 </body>
+
 </html>

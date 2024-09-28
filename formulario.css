@@ -1,52 +1,99 @@
-body {
-  background-color: rgb(211, 230, 249);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-header {
-  background-color: rgb(69, 142, 172);
-  height: 110px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-header img {
-  width: 130px;
-  margin-left: 1%;
-  float: left;
-}
-header nav {
-  margin-top: 1%;
-  float: right;
-}
-header nav a {
-  text-decoration: none;
-  color: white;
-  margin-right: 10px;
+body{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
-form {
-  margin-top: 3%;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 4px;
-  font-size: 30px;
-  width: 50%;
-  justify-content: space-between;
+.container{
+  background-color:#fff;
+  border-radius: 30px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 500px; 
+  max-width: 80%; 
+  min-height: 400px; 
 }
-form:focus {
-  outline: none;
-  border: 1px solid rgb(69, 142, 172);
-}
- div{
-    margin-top: 10%;
-    margin-left: 40%;
- }
+  .container p{
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.3px;
+      margin: 20px 0;
+  }
 
-button {
-  width: 20%;
-  height: 50px;
-  background-color: rgb(69, 142, 172);
-  color: white;
-  border-radius: 10px;
+.container span{
+    font-size: 12px;
 }
-button:hover {
-  background-color: rgb(29, 150, 130);
+
+.container a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button{
+    background-color: #42b1d0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input{
+    background-color: rgb(81, 176, 213);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+.social-icons{
+    margin: 20px 0;
+}
+.social-icons a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 20px;
 }
