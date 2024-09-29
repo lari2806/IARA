@@ -63,9 +63,7 @@ body{
     background-color: transparent;
     border-color: #fff;
 }
-input::placeholder {
-    color: #fff; 
-}
+
 .container form{
     background-color: #fff;
     display: flex;
@@ -75,7 +73,9 @@ input::placeholder {
     padding: 0 40px;
     height: 100%;
 }
-
+input::placeholder {
+    color: #fff; 
+}
 .container input{
     background-color: rgb(81, 176, 213);
     border: none;

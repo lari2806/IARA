@@ -304,80 +304,41 @@ main p {
   }
 }
 
-#chat-button {
+#button-container {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+  margin-top: 10%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+#chat-button, #chat-button2, #chat-button3, #chat-button4 {
   background-color: rgb(110, 183, 215);
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 10px 20px;
   color: white;
   border: none;
+  cursor: pointer;
   border-radius: 20px;
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   height: 100px;
   width: 300px;
-  margin-left: 20%;
-  margin-top: 5%;
+  margin: 10px; /* Adiciona espaço entre os botões */
+}
+#chat-button:focus, #chat-button2:focus, #chat-button3:focus, #chat-button4:focus {
+  outline: none;
 }
 
-#chat-button:hover {
+#chat-button:hover, #chat-button2:hover, #chat-button3:hover, #chat-button4:hover {
   background-color: rgb(69, 142, 172);
+  
 }
 
-#chat-button2 {
-  background-color: rgb(110, 183, 215);
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 40px;
-  font-family:'Montserrat', sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  height: 110px;
-  width: 300px;
-  margin-left: 20%;
-  margin-top: 10%;
-}
-
-#chat-button2:hover {
-  background-color: rgb(69, 142, 172);
-}
-
-#chat-button3 {
-  background-color: rgb(110, 183, 215);
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 40px;
-  font-family:'Montserrat', sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  height: 110px;
-  width: 300px;
-  margin-left: 20%;
-  margin-top: 10%;
-}
-
-#chat-button3:hover {
-  background-color: rgb(69, 142, 172);
-}
-
-#chat-button4 {
-  background-color: rgb(110, 183, 215);
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 40px;
-  font-family:'Montserrat', sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  height: 110px;
-  width: 300px;
-  margin-left: 20%;
-  margin-top: 10%;
-}
-
-#chat-button4:hover {
-  background-color: rgb(69, 142, 172);
-}
 #sobre {
   padding: 0 20px;
   margin-top: 10%;
