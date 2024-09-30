@@ -9,7 +9,7 @@
 
 body{
     background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background: linear-gradient(to right, #dbe9e9, #80d7ef);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@ body{
 .container{
   background-color:#fff;
   border-radius: 30px;
-   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.57);
   position: relative;
   overflow: hidden;
   width: 500px; 
