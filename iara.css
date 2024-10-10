@@ -25,8 +25,8 @@ header {
 }
 
 header img {
-  width: 10%;
-  height: 200%;
+  width: 8%;
+  height: 160%;
 }
 
 .form {
@@ -305,38 +305,43 @@ main p {
 }
 
 #button-container {
-  display: flex;
-  justify-content: space-around; 
-  flex-wrap: wrap; 
+  width: 80%;
+  margin: auto;
   margin-top: 10%;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
 }
 
-#chat-button, #chat-button2, #chat-button3, #chat-button4 {
-  background-color: rgb(110, 183, 215);
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-  padding: 10px 20px;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
+h3{
+  color: rgb(69, 142, 172);
   font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  height: 100px;
-  width: 300px;
-  margin: 10px; /* Adiciona espaço entre os botões */
 }
-#chat-button:focus, #chat-button2:focus, #chat-button3:focus, #chat-button4:focus {
-  outline: none;
+aside {
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-start;
 }
-
-#chat-button:hover, #chat-button2:hover, #chat-button3:hover, #chat-button4:hover {
+img {
+  margin-left: 15px; /* Espaço entre o texto e a imagem */
+  width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+}
+.image-left {
+  order: -1; /* Faz a imagem aparecer antes do conteúdo */
+  margin-right: 15px; /* Espaço entre a imagem e o texto */
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  margin-top: 10px;
   background-color: rgb(69, 142, 172);
-  
+  color: #fff;
+  width: 50%;
+  height: auto;
+
+}
+.right {
+  justify-content: flex-end; /* Alinha à direita */
 }
 
 #sobre {
