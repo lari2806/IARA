@@ -6,108 +6,111 @@
     <title>IARA</title>
     <link rel="stylesheet" href="iara.css">
     <link rel="shortcut icon" href="imagens/logo favicon.png" type="image/x-icon">
-
 </head>
 <body>
 
-  <header>
-    <img src="imagens/logo favicon (1).png" alt="">
-
+<header>
+    <img src="imagens/logo favicon (1).png" alt="Logo IARA">
+    
     <nav>
-      <ul class="list">
-          <li><a href="/">Contato</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="login.html">Entrar</a></li>
-          <li><a href="formulário.html">Cadastrar-se</a></li>
-      </ul>
-  </nav>
-  <form class="form" onsubmit="return search()">
-      <label for="search">
-          <input class="input" type="text" required="" placeholder="Pesquisar" id="search">
-          <div class="fancy-bg"></div>
-          <div class="search">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr">
-                  <g>
-                      <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
-                  </g>
-              </svg>
-          </div>
-          <button class="close-btn" type="reset">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-              </svg>
-          </button>
-      </label>
-  </form>
-</header>
-  </form>
+        <ul class="list">
+            <li><a href="/">Contato</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="login.html">Entrar</a></li>
+            <li><a href="formulário.html">Cadastrar-se</a></li>
+        </ul>
+    </nav>
+
+    <form class="form" onsubmit="return search()">
+        <label for="search">
+            <input class="input" type="text" required placeholder="Pesquisar" id="search">
+            <div class="fancy-bg"></div>
+            <div class="search">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+            </div>
+            <button class="close-btn" type="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </label>
+    </form>
 </header>
 
 <main>
-  
     <div id="text"></div>
     
     <section class="app-download">
-      <h2>Baixe Nosso Aplicativo:</h2>
-      <p>Escaneie o QR code abaixo para baixar nosso aplicativo:</p>
-      <div class="qr-code">
-          <img src="imagens/qrcode.jpeg" alt="QR Code para baixar o aplicativo">
-      </div>
-      <a href="https://seuapp.com/download" class="download-button">Baixar Aplicativo</a>
-  </section>
+        <h2>Baixe Nosso Aplicativo:</h2>
+        <p>Escaneie o QR code abaixo para baixar nosso aplicativo:</p>
+        <div class="qr-code">
+            <img src="imagens/qrcode.jpeg" alt="QR Code para baixar o aplicativo">
+        </div>
+        <a href="https://seuapp.com/download" class="download-button">Baixar Aplicativo</a>
+    </section>
 </main>
 
 <div id="button-container">
-  <aside>
-      <div class="content">
-          <h3>Chat</h3>
-          <p>Este é o parágrafo para o primeiro botão.</p>
-          <button id="chat-button"><a href="#">Chat</a></button>
-      </div>
-      <img src="imagens/imagem1.jpeg" alt="Imagem 1">
-  </aside>
-  <aside class="right">
-      <div class="content">
-          <h3>Fale com a nossa equipe</h3>
-          <p>Este é o parágrafo para o segundo botão.</p>
-          <button id="chat-button2"><a href="#">Fale Conosco</a></button>
-      </div>
-      <img class="image-left" src="imagem2.png" alt="Imagem 2">
-  </aside>
-  <aside>
-      <div class="content">
-          <h3>Seja Voluntario</h3>
-          <p>Este é o parágrafo para o terceiro botão.</p>
-          <button id="chat-button3"><a href="#">Seja nosso voluntario</a></button>
-      </div>
-      <img src="imagem3.png" alt="Imagem 3">
-  </aside>
-  <aside class="right">
-      <div class="content">
-          <h3>Locais de apoio</h3>
-          <p>Este é o parágrafo para o quarto botão.</p>
-          <button id="chat-button4"><a href="#">Locais de apoio</a></button>
-      </div>
-      <img class="image-left" src="imagem4.png" alt="Imagem 4">
-  </aside>
+    <aside>
+        <div class="content">
+            <h3>Chat</h3>
+            <p>Este é o parágrafo para o primeiro botão.</p>
+            <button id="chat-button"><a href="#">Chat</a></button>
+        </div>
+        <img src="imagens/imagem1.jpeg" alt="Imagem 1">
+    </aside>
+
+    <aside class="right">
+        <div class="content">
+            <h3>Fale com a nossa equipe</h3>
+            <p>Este é o parágrafo para o segundo botão.</p>
+            <button id="chat-button2"><a href="#">Fale Conosco</a></button>
+        </div>
+        <img class="image-left" src="imagem2.png" alt="Imagem 2">
+    </aside>
+
+    <aside>
+        <div class="content">
+            <h3>Seja Voluntário</h3>
+            <p>Este é o parágrafo para o terceiro botão.</p>
+            <button id="chat-button3"><a href="#">Seja nosso voluntário</a></button>
+        </div>
+        <img src="imagem3.png" alt="Imagem 3">
+    </aside>
+
+    <aside class="right">
+        <div class="content">
+            <h3>Locais de apoio</h3>
+            <p>Este é o parágrafo para o quarto botão.</p>
+            <button id="chat-button4"><a href="#">Locais de apoio</a></button>
+        </div>
+        <img class="image-left" src="imagem4.png" alt="Imagem 4">
+    </aside>
 </div>
+
 <div id="sobre">
-  <h2 class="titulo ">Sobre <span class="titulo-iara">IARA</span></h2>
-  <div class="sobre-container">
-    <p>
-      O sistema IARA (Inclusão, Apoio, Respeito e Ajuda) foi criado para apoiar pessoas, informando-as sobre seus direitos e auxiliando vítimas de violência, seja ela física ou verbal, direcionando-as para pontos de apoio em sua localidade.
-       Para utilizar o IARA, basta informar logar, pondo sua idade, estado, como deseja ser chamado e com qual gênero se identifica. O IARA também indicará a rede de apoio mais próxima caso o usuário deseje essa informação. 
-      O IARA foi desenvolvido para encorajar pessoas que têm medo ou não se sentem à vontade para tratar desses assuntos, oferecendo uma ferramenta onde se sintam mais confortáveis.
-    </p>
-    <img src="imagens/logo favicon (1).png" alt="logo do sistema IARA" />
-  </div>
+    <h2 class="titulo">Sobre <span class="titulo-iara">IARA</span></h2>
+    <div class="sobre-container">
+        <p>
+            O sistema IARA (Inclusão, Apoio, Respeito e Ajuda) foi criado para apoiar pessoas, informando-as sobre seus direitos e auxiliando vítimas de violência, seja ela física ou verbal, direcionando-as para pontos de apoio em sua localidade. 
+            Para utilizar o IARA, basta informar logar, pondo sua idade, estado, como deseja ser chamado e com qual gênero se identifica. O IARA também indicará a rede de apoio mais próxima caso o usuário deseje essa informação. 
+            O IARA foi desenvolvido para encorajar pessoas que têm medo ou não se sentem à vontade para tratar desses assuntos, oferecendo uma ferramenta onde se sintam mais confortáveis.
+        </p>
+        <img src="imagens/logo favicon (1).png" alt="Logo do sistema IARA">
+    </div>
 </div>
+
 <footer>
-  <div class="footer-links">
-      <a href="politica-privacidade.html">Política de Privacidade</a>
-      <a href="seja-patrocinador.html">Seja Nosso Patrocinador</a>
-  </div>
+    <div class="footer-links">
+        <a href="politica-privacidade.html">Política de Privacidade</a>
+        <a href="seja-patrocinador.html">Seja Nosso Patrocinador</a>
+    </div>
 </footer>
+
 <script src="trimg.js"></script>
 <script src="iara.js"></script>
 
