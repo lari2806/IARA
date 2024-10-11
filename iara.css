@@ -409,3 +409,17 @@ nav {
   letter-spacing: 3px;
   margin-left: 32px;
 }
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  width: 300px; /* Ajuste a largura conforme necessário */
+}
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  
+}
